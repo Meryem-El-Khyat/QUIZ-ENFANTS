@@ -93,9 +93,7 @@ body{
     height: 150px;
     margin-bottom: 10px;
 }
-.qa_ans_row:hover span{
-    background-color: rgb(215, 214, 213);
-}
+
 .qa_ans_row input:checked + span{
     background-color: red;
     color:#fff;
