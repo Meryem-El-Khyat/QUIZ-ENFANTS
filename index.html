@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <div class="qa_box">
+        <div class="qa_header">
+            <span>Score: <span id="score">0</span></span>
+            <span id="countdown">0</span>
+        </div>
+        <div class="qa_body">
+            <div class="qa_set active">
+                <h4>1.Quelle est la première <br>lettre de l'alphabet ?</h4>
+                <div class="qa_ans_row" style="background-color: yellow;">
+                    <input type="radio" name="a1"  >
+                    <span  style="color: yellow;"> <img src="images/EE.jpg" alt="" > <b>E</b>  </span>
+                </div>
+                <div class="qa_ans_row" style=" background-color: rgb(247, 92, 169)">
+                    <input type="radio" name="a1"  valid="valid">
+                    <span style=" color: rgb(247, 92, 169)"> <img src="images/AA.jpg" alt="" ><b> A</b> </span>
+                </div>
+                <div class="qa_ans_row" id="id3" style=" background-color: rgb(249, 110, 59)">
+                    <input type="radio" name="a1" >
+                    <span style="color: rgb(249, 110, 59)"> <img src="images/GG.jpg" alt="" > <b>G</b> </span>
+                </div>
+                <div class="qa_ans_row" id="id4" style=" background-color:rgb(55, 55, 165)">
+                    <input type="radio" name="a1"  >
+                    <span style="color:rgb(55, 55, 165)"> <img src="images/DD.jpg" alt="" ><b>D </b></span>
+                </div>
+            </div>
+            
+            <div class="qa_set ">
+                <h4 style="text-align: center;font-size: 25px;">2.Quel est le nombre <br> qui suit '5' ?</h4>
+                <div class="qa_ans_row" style="background-color: rgb(82, 17, 143);">
+                    <input type="radio" name="a3" >
+                    <span style="color: rgb(82, 17, 143);"> <img src="images/88.jpg" alt="" ><b>8</b> </span>
+                </div>
+                <div class="qa_ans_row" style="background-color: rgb(9, 150, 9);">
+                    <input type="radio" name="a3">
+                    <span style="color: rgb(9, 150, 9);"> <img src="images/2.jpg" alt="" ><b>2</b> </span>
+                </div>
+                <div class="qa_ans_row" style="background-color: rgb(236, 140, 172);">
+                    <input type="radio" name="a3" valid="valid">
+                    <span style="color: rgb(236, 140, 172);"> <img src="images/66.jpg" alt=""><b>6</b> </span>
+                </div>
+                <div class="qa_ans_row" style="background-color: rgb(232, 4, 4);" >
+                    <input type="radio" name="a3">
+                    <span style="color: rgb(232, 4, 4);"> <img src="images/11.jpg" alt="" ><b>11</b> </span>
+                </div>
+            </div>
+            <div class="qa_set ">
+                <h4 style="text-align: center;font-size: 25px;">3.Quel fruit est jaune et courbé,<br> souvent associé aux singes ?</h4>
+                <div class="qa_ans_row" style="background-color: rgb(230, 230, 6);">
+                    <input type="radio" name="a2" valid="valid">
+                    <span style="color: rgb(230, 230, 6);"> <img src="images/banane.jpg" alt=""> <b>Banane</b> </span>
+                </div>
+                <div class="qa_ans_row" style="background-color: rgb(246, 13, 91);">
+                    <input type="radio" name="a2" >
+                    <span style="color: rgb(246, 13, 91);"> <img src="images/pitaya.jpg" alt="" > <b>Pitaya</b> </span>
+                </div>
+                <div class="qa_ans_row" style="background-color:rgb(131, 59, 32) ;">
+                    <input type="radio" name="a2">
+                    <span style="color:rgb(131, 59, 32) ;"> <img src="images/ananas.jpg" alt="" > <b>Ananas</b> </span>
+                </div>
+                <div class="qa_ans_row" style="background-color: orange;">
+                    <input type="radio" name="a2">
+                    <span style="color: orange;"> <img src="images/mango.jpg" alt="" > <b>Mango</b> </span>
+                </div>
+            </div>
+            <div class="qa_set ">
+                <h4 style="text-align: center;font-size: 25px;">4.Quel est le nom de l'animal <br>qui miaule et ronronne ?</h4>
+                <div class="qa_ans_row" style="background-color: rgb(255, 226, 194);">
+                    <input type="radio" name="a4" valid="valid">
+                    <span style="color: rgb(255, 200, 142);"> <img src="images/chat.jpg" alt="" ><B>Chat</B> </span>
+                </div>
+                <div class="qa_ans_row" style="background-color: rgb(189, 184, 184);">
+                    <input type="radio" name="a4">
+                    <span style="color: rgb(137, 134, 134);"> <img src="images/elephant.jpg" alt="" ><b>Eléphant</b> </span>
+                </div>
+                <div class="qa_ans_row" style="background-color: rgb(234, 234, 15);">
+                    <input type="radio" name="a4" >
+                    <span style="color: rgb(234, 234, 15);"> <img src="images/lion.jpg" alt=""><b>Lion</b> </span>
+                </div>
+                <div class="qa_ans_row" style="background-color: rgb(253, 212, 219);">
+                    <input type="radio" name="a">
+                    <span style="color: rgb(235, 200, 206);"> <img src="images/panda.jpg" alt="" ><b>Panda</b> </span>
+                </div>
+            </div>
+            <div class="qa_set ">
+                <h4 style="text-align: center;font-size: 25px;">5.Quel légume est vert et souvent<br>utilisé dans les salades ?</h4>
+                <div class="qa_ans_row" style="background-color: rgb(252, 168, 13);">
+                    <input type="radio" name="a5" >
+                    <span style="color: rgb(252, 168, 13);"> <img src="images/carotte.jpg" alt="" ><b>Caroute</b> </span>
+                </div>
+                <div class="qa_ans_row" style="background-color: rgb(189, 39, 89);">
+                    <input type="radio" name="a5">
+                    <span style="color: rgb(189, 39, 89);"> <img src="images/barba.jpg" alt="" ><b>Betterave</b> </span>
+                </div>
+                <div class="qa_ans_row"  style="background-color: rgb(78, 153, 78);">
+                    <input type="radio" name="a5" valid="valid">
+                    <span style="color: rgb(78, 153, 78);"> <img src="images/concombre.jpg" alt=""><b>Concombre </b></span>
+                </div>
+                <div class="qa_ans_row" style="background-color: red;">
+                    <input type="radio" name="a5">
+                    <span style="color: red;"> <img src="images/tomate.jpg" alt="" ><b>Tomate</b> </span>
+                </div>
+            </div>
+            <div class="qa_set ">
+                <h4 style="text-align: center;font-size: 25px;">6.Quelle est la couleur du ciel <br> par temps clair ?</h4>
+                <div class="qa_ans_row" style="background-color: white;">
+                    <input type="radio" name="a6" >
+                    <span style="color: red;"> <img src="images/rouge.jpg" alt="" ><b>Rouge</b> </span>
+                </div>
+                <div class="qa_ans_row" style="background-color: white;">
+                    <input type="radio" name="a6">
+                    <span style="color: yellow;"> <img src="images/jaune.jpg" alt="" ><b>Jaune</b> </span>
+                </div>
+                <div class="qa_ans_row" style="background-color: white;">
+                    <input type="radio" name="a6" >
+                    <span style="color: rgb(14, 156, 14);"> <img src="images/verte.jpg" alt=""><b>Vert</b> </span>
+                </div>
+                <div class="qa_ans_row" style="background-color: white;">
+                    <input type="radio" name="a6" valid="valid">
+                    <span style="color: rgb(6, 195, 209);"> <img src="images/ciel.png" alt="" ><b>Blue</b> </span>
+                </div>
+            </div>
+            <div class="qa_set ">
+                <h4 style="text-align: center;font-size: 25px;">7.Quel animal est surnommé <br> "le roi de la jungle" ?</h4>
+                <div class="qa_ans_row" style="background-color: rgb(129, 92, 42);">
+                    <input type="radio" name="a7" >
+                    <span style="color: rgb(129, 92, 42);"> <img src="images/dabdoub.jpg" alt="" ><b>Ours Brun</b> </span>
+                </div>
+                <div class="qa_ans_row" style="background-color: rgb(250, 250, 52);">
+                    <input type="radio" name="a7">
+                    <span style="color: rgb(250, 250, 52);"> <img src="images/giraphe.jpg" alt="" ><b>Giraphe</b> </span>
+                </div>
+                <div class="qa_ans_row" style="background-color: rgb(183, 107, 7);">
+                    <input type="radio" name="a7" valid="valid">
+                    <span style="color: rgb(183, 107, 7);"> <img src="images/lion.jpg" alt=""> <b>Lion</b></span>
+                </div>
+                <div class="qa_ans_row" style="background-color: rgb(84, 81, 81);">
+                    <input type="radio" name="a7">
+                    <span style="color: rgb(84, 81, 81);"> <img src="images/zebre.jpg" alt="" ><b>Zébre </b></span>
+                </div>
+            </div>
+            <div class="qa_set ">
+                <h4 style="text-align: center;font-size: 25px;">8.Quel légume est souvent utilisé <br> pour faire de la soupe ?</h4>
+                <div class="qa_ans_row" style="background-color: rgb(103, 161, 15);">
+                    <input type="radio" name="a8" valid="valid">
+                    <span style="color: rgb(103, 161, 15);"> <img src="images/poireau.jpg" alt="" > <b>Poiraeu</b> </span>
+                </div>
+                <div class="qa_ans_row" style="background-color: rgb(251, 196, 78);">
+                    <input type="radio" name="a8">
+                    <span style="color: rgb(251, 196, 78);"> <img src="images/mais.jpg" alt="" > <b>Maïs</b> </span>
+                </div>
+                <div class="qa_ans_row" style="background-color: rgb(107, 176, 107);">
+                    <input type="radio" name="a8" >
+                    <span style="color: rgb(107, 176, 107);"> <img src="images/chou.jpg" alt=""><b> Chou</b> </span>
+                </div>
+                <div class="qa_ans_row" style="background-color: yellow;">
+                    <input type="radio" name="a8">
+                    <span style="color: yellow;"> <img src="images/citron.jpg" alt="" > <b>Citron</b> </span>
+                </div>
+            </div>
+            <div class="qa_set ">
+                <h4 style="text-align: center;font-size: 25px;">9.Quelle est la forme géométrique <br> qui a trois cotes?</h4>
+                <div class="qa_ans_row" style="background-color: rgb(3, 171, 3);">
+                    <input type="radio" name="a9" >
+                    <span style="color: rgb(3, 171, 3);"> <img src="images/rectangle.jpg" alt="" ><b>Rectangle </b></span>
+                </div>
+                <div class="qa_ans_row" style="background-color: rgb(137, 177, 251);">
+                    <input type="radio" name="a9">
+                    <span style="color: rgb(137, 177, 251);"> <img src="images/cercle.jpg" alt="" > <b>Cercle</b> </span>
+                </div>
+                <div class="qa_ans_row" style="background-color: rgb(232, 232, 25);">
+                    <input type="radio" name="a9" valid="valid">
+                    <span style="color: rgb(232, 232, 25);"> <img src="images/triongle.jpg" alt=""><b>Triangle</b> </span>
+                </div>
+                <div class="qa_ans_row" style="background-color: rgb(199, 10, 10);">
+                    <input type="radio" name="a9">
+                    <span style="color: rgb(199, 10, 10);"> <img src="images/carre.jpg" alt="" ><b>Carré</b> </span>
+                </div>
+            </div>
+            <div class="qa_set ">
+                <h4 style="text-align: center;font-size: 25px;">10.Quel est le nombre de pattes <br> qu'un chien a ?</h4>
+                <div class="qa_ans_row" style=" background-color: rgb(247, 92, 169)">
+                    <input type="radio" name="a10" >
+                    <span style=" color: rgb(247, 92, 169)"> <img src="images/66.jpg" alt="" >6 </span>
+                </div>
+                <div class="qa_ans_row" style="background-color: rgb(5, 190, 214);">
+                    <input type="radio" name="a10" valid="valid">
+                    <span style="color: rgb(5, 190, 214);"> <img src="images/44.jpg" alt="" ><b>4</b></span>
+                </div>
+                <div class="qa_ans_row"  style="background-color: rgb(22, 132, 22);">
+                    <input type="radio" name="a10" >
+                    <span style="color: rgb(22, 132, 22);"> <img src="images/2.jpg" alt=""> <b>2</b> </span>
+                </div>
+                <div class="qa_ans_row" style="background-color: rgb(252, 97, 40);">
+                    <input type="radio" name="a10">
+                    <span style="color: rgb(252, 97, 40);"> <img src="images/33.jpg" alt="" > <b>3</b> </span>
+                </div>
+            </div>
+            <div class="qa_set">
+                <h4 style="text-align: center;font-size: 25px;">Votre score total  <span id="totalScore">0</span> sur 100</h4>
+                <h4 style="text-align: center;font-size: 25px;">Temps total du quiz: <span id="quizTime"></span></h4>
+                <button  class="btn1" > <a href="Start.html">Commencer</a></button>
+            </div> 
+        </div>
+        <div class="qa_footer">
+            <span class="btn1" id="skip" >Sauter</span>
+        </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
